@@ -1,14 +1,14 @@
 # User specific & automatically generated files #
 #################################################
-/app/Config/database.php
-/app/tmp
-/lib/Cake/Console/Templates/skel/tmp/
-/plugins
-/vendors
 /build
 /dist
 /tags
+/composer.lock
+/phpunit.xml
+/phpcs.xml
+/vendor
 *.mo
+<<<<<<< HEAD
 
 # IDE and editor specific files #
 #################################
@@ -17,6 +17,10 @@
 /.project
 /.buildpath
 /.settings/
+=======
+debug.log
+error.log
+>>>>>>> e3c3594e24bfc83bfbcd772b19789cdd0557f6c1
 
 # OS generated files #
 ######################
@@ -28,3 +32,23 @@
 Icon?
 ehthumbs.db
 Thumbs.db
+
+# Tool specific files #
+#######################
+# vim
+*~
+*.swp
+*.swo
+# sublime text & textmate
+*.sublime-*
+*.stTheme.cache
+*.tmlanguage.cache
+*.tmPreferences.cache
+# Eclipse
+.settings/*
+# JetBrains, aka PHPStorm, IntelliJ IDEA
+.idea/*
+# NetBeans
+nbproject/*
+# Visual Studio Code
+.vscode
