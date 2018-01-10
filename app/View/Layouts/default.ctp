@@ -28,12 +28,23 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	<?php
 		echo $this->Html->meta('icon');
 
-		echo $this->Html->css('cake.generic');
-
+		//echo $this->Html->css('cake.generic');
+		echo $this->Html->css('bootstrap.min');
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
 		echo $this->fetch('script');
 	?>
+	<style>
+	body {
+		padding-top: 50px;
+	}
+	.starter-template {
+		padding: 40px 15px;
+		text-align: center;
+	}
+	</style>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>script
 </head>
 <body>
 	<div id="container">
@@ -59,5 +70,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		</div>
 	</div>
 	<?php echo $this->element('sql_dump'); ?>
+	<?php echo $this->Html->script('bootstrap.min'); ?>
+	<?php echo $this->fetch('script'); ?>
 </body>
 </html>
