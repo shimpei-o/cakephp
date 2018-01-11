@@ -5,6 +5,9 @@ class PostsController extends AppController {
 	public function index() {
 		$this->set('posts', $this->Post->find('all'));
 
+		// バブルソート実装
+		$a = array(9,3,7,2,8,9,2,1,4);
+		// 
 		
 
 	}
